@@ -247,9 +247,12 @@ for pet in pets:
 
 cities = {
   'Москва' : {'country' : 'РФ', 'population' : 'Мажоры', 'fact' : 'Не резиновая'},
-  'Иркутск' : {'country' : 'РФ', 'population' : 'Мажоры', 'fact' : 'Не резиновая'}, 
+  'Иркутск' : {'country' : 'РФ', 'population' : 'Буряты', 'fact' : 'Холодный'}, 
   'Калиниград' : {'country' : 'РФ', 'population' : 'Кант', 'fact' : 'Почти Европа'}}
 #info_msk = {'country' : 'РФ', 'population' : 'Мажоры', 'fact' : 'Не резиновая'}
 #info_irk = {'country' : 'РФ', 'population' : 'Буряты', 'fact' : 'сибирь'}
 #info_kgd = {'country' : 'РФ', 'population' : 'Кант', 'fact' : 'Почти Европа'}
-print(cities['Москва'])
+for city, info in cities.items():
+  print("\nНа очереде город: " + city)
+  print("Страна: " + info['country'] + "\nДостопримечательности: " + info['population'] + "\nИнтересный факт: " + info['fact']) 
+ 
